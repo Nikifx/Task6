@@ -1,0 +1,92 @@
+body {
+    background-image: url('https://th.bing.com/th/id/OIP.e1C1sDvZRsC_Hd2S93zTqgHaD9?w=1920&h=1025&rs=1&pid=ImgDetMain=');
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #fff;
+}
+
+.calculator {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    width: 600px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+label, input, button, select {
+    font-size: 18px;
+    margin: 10px 0;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.result {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.product-images {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.product-image {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s, border 0.3s;
+}
+
+.product-image:hover {
+    transform: scale(1.1);
+}
+
+.product-item {
+    text-align: center;
+}
+
+.selected {
+    border: 3px solid orange;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.options-container, .property-container {
+    display: none;
+}
+
+.service-type-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.service-type-container label {
+    margin-right: 10px;
+}
+
+.service-type-container input {
+    margin-left: 5px;
+}
